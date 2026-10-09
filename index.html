@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Translate - Language Translation Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="brand">
+            <span class="brand-icon">T</span>
+            <span>Translate</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Section -->
+    <main class="main-container">
+
+        <section class="hero">
+
+            <p class="eyebrow">LANGUAGE TRANSLATION TOOL</p>
+
+            <h1>Translate your text<br>with ease.</h1>
+
+            <p class="description">
+                Enter your text, choose your languages, and get an accurate
+                translation in seconds.
+            </p>
+
+        </section>
+
+
+        <!-- Translator -->
+        <section class="translator">
+
+            <!-- Source -->
+            <div class="translation-panel">
+
+                <div class="panel-header">
+
+                    <select id="sourceLanguage">
+                        <option value="en">English</option>
+                        <option value="kn">Kannada</option>
+                        <option value="hi">Hindi</option>
+                        <option value="te">Telugu</option>
+                        <option value="ta">Tamil</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="es">Spanish</option>
+                    </select>
+
+                </div>
+
+                <textarea
+                    id="inputText"
+                    placeholder="Enter text to translate..."
+                ></textarea>
+
+                <div class="panel-footer">
+
+                    <span>
+                        <span id="charCount">0</span> characters
+                    </span>
+
+                    <button class="clear-btn" id="clearBtn">
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Swap -->
+            <button
+                id="swapBtn"
+                class="swap-btn"
+                title="Swap languages"
+            >
+                ⇄
+            </button>
+
+
+            <!-- Target -->
+            <div class="translation-panel">
+
+                <div class="panel-header">
+
+                    <select id="targetLanguage">
+                        <option value="kn">Kannada</option>
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="te">Telugu</option>
+                        <option value="ta">Tamil</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="es">Spanish</option>
+                    </select>
+
+                </div>
+
+                <div id="outputText" class="output-text">
+                    Your translation will appear here.
+                </div>
+
+                <div class="panel-footer">
+
+                    <span></span>
+
+                    <div class="output-buttons">
+
+                        <button id="copyBtn" class="icon-btn">
+                            Copy
+                        </button>
+
+                        <button id="speakBtn" class="icon-btn">
+                            Listen
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Translate Button -->
+        <button id="translateBtn" class="translate-btn">
+            Translate
+            <span>→</span>
+        </button>
+
+
+        <!-- Information -->
+        <section class="info-section">
+
+            <div>
+                <strong>Simple</strong>
+                <p>Easy-to-use interface</p>
+            </div>
+
+            <div>
+                <strong>Fast</strong>
+                <p>Quick API translation</p>
+            </div>
+
+            <div>
+                <strong>Accessible</strong>
+                <p>Works across devices</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Translate. Language Translation Tool.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
